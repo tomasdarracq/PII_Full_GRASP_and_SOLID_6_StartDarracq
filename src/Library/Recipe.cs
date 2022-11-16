@@ -8,7 +8,7 @@ namespace Full_GRASP_And_SOLID
     {
         // Cambiado por OCP
         private IList<BaseStep> steps = new List<BaseStep>();
-        public bool Cooked { get; set; } = false;
+        public bool Cooked { get; private set; } = false;
 
 
         public Product FinalProduct { get; set; }
