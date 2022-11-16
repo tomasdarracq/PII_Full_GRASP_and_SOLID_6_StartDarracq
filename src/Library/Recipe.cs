@@ -76,6 +76,7 @@ namespace Full_GRASP_And_SOLID
         }
         public void TimeOut()
         {
+            if(this.Cooked) throw new Exception("Ya esta cocinado");
             this.Cooked = true;
         }
     }
